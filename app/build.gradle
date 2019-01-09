@@ -5,7 +5,7 @@ android {
     defaultConfig {
         applicationId "iqquiz.blutbad.iqquiz"
         minSdkVersion 19
-        targetSdkVersion 28tes
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
     }
