@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="@drawable/gradient_dialog_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <ImageView android:background="@drawable/dialog_bg_luch" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip">
+            <FrameLayout android:background="@drawable/gradient_dialog_textframe" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.5" />
+            <android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/giqquiz" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip">
+                                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/mainmenu_textcolor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="IQ Викторина" />
+                                <TextView android:textColor="@color/mainmenu_textcolor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="IQ Викторина 70 000 вопросов для любителей тренировать свой мозг и становиться умнее. " />
+                                <Button android:textSize="12.0dip" android:layout_gravity="right" android:id="@+id/btn_iqquiz" android:background="@drawable/btn_openkey_answer_selector" android:layout_width="100.0dip" android:layout_height="25.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:text="Установить" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/g2048" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip">
+                                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/mainmenu_textcolor" android:id="@+id/textView3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="2048" />
+                                <TextView android:textColor="@color/mainmenu_textcolor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Это превосходная версия популярной игры 2048, играть в которую вы можете на своем устройстве Android. Кроме этого, игра отлично подходит для устройств с сенсорными экранами." />
+                                <Button android:textSize="12.0dip" android:layout_gravity="right" android:id="@+id/btn_2048" android:background="@drawable/btn_openkey_answer_selector" android:layout_width="100.0dip" android:layout_height="25.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:text="Установить" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/gflappyhero" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip">
+                                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/mainmenu_textcolor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Летающий Герой" />
+                                <TextView android:textColor="@color/mainmenu_textcolor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Летающий Герой парит в небе и ищет приключения.  Злостные монстры будут встречаться на пути но их легко истребить настоящему Герою." />
+                                <Button android:textSize="12.0dip" android:layout_gravity="right" android:id="@+id/btn_flappyhero" android:background="@drawable/btn_openkey_answer_selector" android:layout_width="100.0dip" android:layout_height="25.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:text="Установить" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                    <FrameLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/gsudoku" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip">
+                                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/mainmenu_textcolor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Судоку++" />
+                                <TextView android:textColor="@color/mainmenu_textcolor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Судоку++ - это лучшая игра, которую вы можете найти для вашего телефона и планшета. Она поможет вам учиться и улучшить ваши навыки игры в судоку." />
+                                <Button android:layout_gravity="right" android:id="@+id/btn_sudoku" android:background="@drawable/btn_openkey_answer_selector" android:layout_width="100.0dip" android:layout_height="25.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:text="Установить" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </FrameLayout>
+    </FrameLayout>
+</RelativeLayout>

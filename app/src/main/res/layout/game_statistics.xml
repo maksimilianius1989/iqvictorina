@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="@drawable/gradient_dialog_frame" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_marginTop="35.0dip" android:layout_marginBottom="50.0dip">
+        <ImageView android:id="@+id/iv_dialog_statistics_molnia" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:srcCompat="@drawable/dialog_bg_luch" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip">
+            <FrameLayout android:background="@drawable/gradient_dialog_textframe" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.5" />
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="320.0dip" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/dialog_text" android:gravity="right" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:text="Всего вопросов:" />
+                    <TextView android:textStyle="bold" android:textColor="@color/dialog_text" android:id="@+id/tv_dialog_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/dialog_text" android:gravity="right" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:text="Ответили правильно:" />
+                    <TextView android:textStyle="bold" android:textColor="@color/dialog_text" android:id="@+id/tv_dialog_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/dialog_text" android:gravity="right" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:text="Текущий уровень:" />
+                    <TextView android:textStyle="bold" android:textColor="@color/dialog_text" android:id="@+id/tv_dialog_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/dialog_text" android:gravity="right" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:text="Всего за уровень:" />
+                    <TextView android:textStyle="bold" android:textColor="@color/dialog_text" android:id="@+id/tv_dialog_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/dialog_text" android:gravity="right" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:text="Осталось до уровня:" />
+                    <TextView android:textStyle="bold" android:textColor="@color/dialog_text" android:id="@+id/tv_dialog_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/dialog_text" android:gravity="right" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:text="Ваш ID:" />
+                    <TextView android:textStyle="bold" android:textColor="@color/dialog_text" android:id="@+id/tv_dialog_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+    <ImageView android:id="@+id/imageView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" app:srcCompat="@drawable/logo_statistics" />
+</RelativeLayout>
