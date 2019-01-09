@@ -1,18 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-</android.support.constraint.ConstraintLayout>
+<RelativeLayout android:id="@+id/activity_main" android:background="#ff7abee4" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:scrolling_image_view="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <blutbad.iqquiz.classes.layouts.ScrollingImageView android:layout_gravity="bottom" android:id="@+id/iv_main_back" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" ads:speed="0.20000005px" ads:src="@drawable/back_3" />
+    <RelativeLayout android:id="@+id/rl_main_game" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <FrameLayout android:id="@+id/fl_main_conteiner_game" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_gravity="center" android:id="@+id/pb_question_load" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="?android:attr/progressBarStyleLarge" />
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_question_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="false" android:layout_alignParentTop="true" android:layout_alignParentStart="false">
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/gradient_topmenu" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <FrameLayout android:layout_width="109.0dip" android:layout_height="30.0dip">
+                        <ImageView android:layout_gravity="left" android:layout_width="109.0dip" android:layout_height="30.0dip" ads:srcCompat="@drawable/score_back" />
+                        <TextView android:textStyle="bold" android:textColor="#ffe4e4e4" android:gravity="center_vertical" android:id="@+id/tv_question_count" android:layout_width="75.0dip" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:text="0" />
+                        <TextView android:textStyle="bold" android:textColor="#ffe4e4e4" android:gravity="center" android:id="@+id/tv_user_level" android:layout_width="20.0dip" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="1" />
+                    </FrameLayout>
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_weight="1.0">
+                        <ImageView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" ads:srcCompat="@drawable/score_empty_back" />
+                        <TextView android:textStyle="bold" android:textColor="#ffe4e4e4" android:gravity="center" android:id="@+id/tv_question_id" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="0" />
+                    </FrameLayout>
+                    <FrameLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="30.0dip">
+                        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" ads:srcCompat="@drawable/money_back" />
+                        <TextView android:textStyle="bold" android:textColor="#ffe4e4e4" android:gravity="center" android:id="@+id/tv_money_total" android:layout_width="109.0dip" android:layout_height="30.0dip" android:layout_marginLeft="3.0dip" android:text="253" />
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="3.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/anser_key_text" android:gravity="center_horizontal" android:id="@+id/tv_question_text" android:background="@drawable/gradient_question_text" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="..." android:layout_weight="1.0" />
+                </LinearLayout>
+                <FrameLayout android:id="@+id/fl_game_timer" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="5.0dip">
+                    <TextView android:textSize="25.0sp" android:textStyle="bold" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_time_elapce" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="0" />
+                    <blutbad.iqquiz.classes.layouts.CircularProgressBar android:layout_gravity="center" android:id="@+id/cpb_time_elapce" android:layout_width="wrap_content" android:layout_height="wrap_content" ads:cpb_progressbar_color="@color/timer_elapce_wait" ads:cpb_background_progressbar_color="#1edddddd" ads:cpb_progressbar_width="5.0dip" ads:cpb_background_progressbar_width="5.0dip" />
+                </FrameLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip">
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <blutbad.iqquiz.classes.FlowLayout android:gravity="center_horizontal" android:id="@+id/fl_question_answer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foregroundGravity="fill|clip_horizontal" />
+                    </FrameLayout>
+                    <TextView android:textSize="20.0sp" android:textStyle="bold" android:gravity="center_horizontal" android:id="@+id/tv_question_win_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Угадали" />
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="25.0dip">
+                        <Button android:id="@+id/btn_answer_openkey" android:background="@drawable/btn_openkey_answer_selector" android:visibility="visible" android:layout_width="155.0dip" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:text="Открыть букву №" android:textAllCaps="false" />
+                        <Button android:textSize="18.0sp" android:id="@+id/btn_answer_key" android:background="@drawable/btn_key_answer_selector" android:layout_width="155.0dip" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:text="Ответить" android:textAllCaps="false" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <FrameLayout android:layout_gravity="bottom" android:id="@+id/fl_question_keyboard" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ToggleButton android:layout_gravity="center|left" android:id="@+id/btn_sound" android:background="@drawable/sound_toggle" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_margin="5.0dip" android:checked="true" android:textOn="" android:textOff="" />
+                        <Space android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                        <Button android:layout_gravity="center|right" android:id="@+id/btn_delete_key" android:background="@drawable/ic_action_name" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_margin="5.0dip" />
+                    </LinearLayout>
+                    <FrameLayout android:id="@+id/fl_keyboard_list" android:background="#39000000" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_centerHorizontal="true">
+                        <blutbad.iqquiz.classes.FlowLayout android:gravity="center" android:layout_gravity="end|center" android:id="@+id/fl_keyboard_conteiner" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    </FrameLayout>
+                </LinearLayout>
+            </FrameLayout>
+            <FrameLayout android:layout_gravity="bottom" android:id="@+id/fr_adView" android:background="#39252525" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_alignParentEnd="false">
+                <com.google.android.gms.ads.AdView android:id="@+id/adView" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" ads:adSize="BANNER" ads:adUnitId="@string/interstitial_ad_unit_id" />
+            </FrameLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/fl_error_load" android:paddingBottom="150.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@+id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip" android:text="Ошибка загрузки (:\nУ вас нет подключение к интернету" />
+            <Button android:layout_gravity="center" android:id="@+id/btn_reload_question" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Повторить попытку" android:onClick="Reload_Question" />
+        </FrameLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_start_game" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_logo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" ads:srcCompat="@drawable/logo" />
+                <Button android:textStyle="bold" android:textColor="@color/mainmenu_textcolor" android:id="@+id/btn_menu_newgame" android:background="@drawable/btn_mainmenu" android:layout_width="160.0dip" android:layout_height="50.0dip" android:text="Начать игру" android:textAllCaps="false" />
+                <Button android:textStyle="bold" android:textColor="@color/mainmenu_textcolor" android:id="@+id/btn_menu_resumegame" android:background="@drawable/btn_mainmenu" android:visibility="gone" android:layout_width="160.0dip" android:layout_height="50.0dip" android:layout_marginTop="5.0dip" android:text="Продолжить" android:textAllCaps="false" />
+                <Button android:textStyle="bold" android:textColor="@color/mainmenu_textcolor" android:id="@+id/btn_menu_statgame" android:background="@drawable/btn_mainmenu" android:layout_width="160.0dip" android:layout_height="50.0dip" android:layout_marginTop="5.0dip" android:text="Статистика" android:textAllCaps="false" />
+                <Button android:textStyle="bold" android:textColor="@color/mainmenu_textcolor" android:id="@+id/btn_menu_sendgame" android:background="@drawable/btn_mainmenu" android:layout_width="160.0dip" android:layout_height="50.0dip" android:layout_marginTop="5.0dip" android:text="Поделиться" android:textAllCaps="false" />
+                <Button android:textStyle="bold" android:textColor="@color/mainmenu_textcolor" android:id="@+id/btn_menu_more" android:background="@drawable/btn_mainmenu" android:layout_width="160.0dip" android:layout_height="50.0dip" android:layout_marginTop="5.0dip" android:text="Еще Игры" android:textAllCaps="false" />
+                <Button android:textStyle="bold" android:textColor="@color/mainmenu_textcolor" android:id="@+id/btn_menu_exitgame" android:background="@drawable/btn_mainmenu" android:layout_width="160.0dip" android:layout_height="50.0dip" android:layout_marginTop="5.0dip" android:text="Выход" android:textAllCaps="false" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textStyle="bold" android:gravity="bottom|center" android:layout_gravity="bottom|center" android:id="@+id/tv_menu_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_ver" />
+            <TextView android:textStyle="bold" android:gravity="bottom|center" android:layout_gravity="bottom|center|right" android:id="@+id/tv_menu_online" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_ver" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>
