@@ -12,7 +12,8 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_alignParentBottom="true"
-        android:layout_gravity="bottom" />
+        android:layout_gravity="bottom"
+        app:speeddd="0.20000005px" app:srcc="@drawable/back_3"/>
 
     <RelativeLayout
         android:id="@+id/rl_main_game"
@@ -64,22 +65,23 @@
                             android:layout_gravity="left"
                             android:src="@drawable/score_back" />
 
-                        <!--<TextView
+                        <TextView
                             android:id="@+id/tv_question_count1"
                             android:layout_width="75.0dip"
-                            android:layout_height="fill_parent" />-->
+                            android:layout_height="fill_parent"
+                        android:layout_marginLeft="30.0dip"
+                        android:gravity="center_vertical"
+                        android:text="0"
+                        android:textColor="#ffe4e4e4"
+                        android:textStyle="bold"/>
 
-                        <!--                  android:layout_marginLeft="30.0dip"
-                      android:gravity="center_vertical"
-                      android:text="0"
-                      android:textColor="#ffe4e4e4"
-                      android:textStyle="bold"-->
 
-                        <!--<TextView
+
+                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="TextView"
-                            android:id="@+id/tv_question_count"/>-->
+                            android:id="@+id/tv_question_count"/>
 
 
                     </FrameLayout>

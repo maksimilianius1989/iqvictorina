@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="ScrollingImageView">
-        <attr name="speed" format="dimension"></attr>
-        <attr name="src" format="string"></attr>
+        <attr name="speeddd" format="dimension"></attr>
+        <attr name="srccc" format="string"></attr>
     </declare-styleable>
     <declare-styleable name="CircularProgressBar">
         <attr name="cpb_background_progressbar_color" format="color"></attr>
@@ -24,5 +24,7 @@
         <attr name="sceneLength" format="integer"></attr>
         <attr name="randomnessResourceId" format="string"></attr>
         <attr name="typedArray" format="string"></attr>
+        <attr name="speedee" format="dimension"></attr>
+        <attr name="srcc" format="string"></attr>
     </declare-styleable>
 </resources>

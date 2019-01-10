@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="FullscreenTheme" parent="Base.ThemeOverlay.AppCompat.Dark">
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#222</item>
+        <item name="colorPrimaryDark">#555</item>
+        <item name="colorAccent">#888</item>
+    </style>
+    <style name="FullscreenTheme" parent="AppTheme">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowFullscreen">true</item>
