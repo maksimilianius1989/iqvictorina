@@ -1,4 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <declare-styleable name="ScrollingImageView">
+        <attr name="speed" format="dimension"></attr>
+        <attr name="src" format="string"></attr>
+    </declare-styleable>
+    <declare-styleable name="CircularProgressBar">
+        <attr name="cpb_background_progressbar_color" format="color"></attr>
+        <attr name="cpb_background_progressbar_width" format="dimension"></attr>
+        <attr name="cpb_progressbar_color" format="color"></attr>
+        <attr name="cpb_progressbar_width" format="dimension"></attr>
+    </declare-styleable>
+    <declare-styleable name="FlowLayout">
 
+    </declare-styleable>
+    <declare-styleable name="FlowLayout_LayoutParams">
+        <attr name="gravity" format="integer"></attr>
+        <attr name="newLine" format="boolean"></attr>
+        <attr name="weight" format="float"></attr>
+    </declare-styleable>
+    <declare-styleable name="ParallaxView">
+        <attr name="initialState" format="integer"></attr>
+        <attr name="speedd" format="dimension"></attr>
+        <attr name="sceneLength" format="integer"></attr>
+        <attr name="randomnessResourceId" format="string"></attr>
+        <attr name="typedArray" format="string"></attr>
+    </declare-styleable>
 </resources>

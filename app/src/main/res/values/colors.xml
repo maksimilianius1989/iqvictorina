@@ -6,4 +6,6 @@
     <color name="timer_elapce_wait">#ff0f9600</color>
     <color name="timer_elapce_wait10">#fffc0000</color>
     <color name="timer_wait">#ffff9020</color>
+    <color name="mainmenu_textcolor">#fffffde3</color>
+    <color name="dialog_text">#ffe8e8e8</color>
 </resources>
