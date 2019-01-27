@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_btn_key"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <Button
+        android:id="@+id/st_btn_key"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="3.0dip"
+        android:background="@drawable/btn_key_selector"
+        android:textColor="#ffd5d3d3"
+        android:textSize="20.0dip" />
+</FrameLayout>

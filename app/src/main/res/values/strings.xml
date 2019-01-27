@@ -6,7 +6,7 @@
     <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior">android.support.design.widget.BottomSheetBehavior</string>
     <string name="character_counter_pattern">%1$d / %2$d</string>
-    <string name="interstitial_ad_rewarded_id">ca-app-pub-7742115155425601/1242342570</string>
+    <string name="interstitial_ad_rewarded_id">ca-app-pub-9091567331130676/4742046240</string>
     <string name="interstitial_ad_sample">Interstitial Ad Sample</string>
     <string name="interstitial_ad_unit_id">ca-app-pub-9091567331130676/6808854695</string>
     <string name="next_level">Next Level</string>
